@@ -5,14 +5,13 @@
     <title>はじめてのjQuery</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script type="text/javascript">
-      $("button").click(function(){
-        $("p").toggle();
+      $("a").click(function(){
+        $("this").hide();
+        return false;
       });
     </script>
   </head>
   <body>
-    <button>変える</button>
-    <p>未変更</p>
-    <p style="display: none">変更済</p>
+    <a href="#">押すと消えるよ</a>
   </body>
 </html>
