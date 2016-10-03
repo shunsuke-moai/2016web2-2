@@ -5,13 +5,15 @@
     <title>はじめてのjQuery</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script type="text/javascript">
-      $("a").on("click",function(){
-        $("this").hide();
-        return false;
+      $(function(){
+        $("#toggle").on("click",function(){
+          $("#target").toggle("slow");
+        });
       });
     </script>
   </head>
   <body>
-    <a href="#">押すと消えるよ</a>
+    <div id="target">押すと消えるよ</div>
+    <button id="toggle">押す</button>
   </body>
 </html>
